@@ -7,7 +7,5 @@ Throughout the course, the following software will be required. Please Follow th
 Conda Package Control System
 Detailed instructions will be up soon!
 
-#### [QGIS](http://www.qgis.org/en/site/forusers/download.html)
+#### [QGIS](QGIS_Download_Install.pdf)
 Quantum GIS (QGIS) is an Open Source Geographic Information System. QGIS is available at no cost to users and provides an alternative to costly GIS software. The QGIS software package currently runs on most versions of Unix, Windows and Mac OS X and supports a number of common raster and vector data formats. QGIS is available under the GNU General Public License (GPL). 
-
-For Step-by-step Installation Instructions, use __QGIS_Download_Install.pdf__ availabile in this folder.
