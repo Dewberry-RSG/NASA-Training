@@ -10,6 +10,6 @@ This repository contains materials and information developed for a three-day wor
 #
 ---
 #
-### Materials Coming Soon!
+### [**Training Schedule**](https://github.com/Dewberry-RSG/NASA-Training/blob/master/training-materials/Agenda.pdf)
 ---
 
