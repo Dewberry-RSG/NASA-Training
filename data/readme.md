@@ -1,7 +1,8 @@
 # Data 
 
-Please visit the [Dewberry ftp](ftp://ftp.dewberry.com/) to download data.
+Please visit the Dewberry ftp to download data: 
 
+ftp = ftp://ftp.dewberry.com/ 
 Username = FloodForecasting
 Password = V144TV
 
