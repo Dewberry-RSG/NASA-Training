@@ -1,17 +1,6 @@
-#
-#				File Name: 	ConvertClip_HDF5_to_TextGeotiff.py
-#
-#	This code is written by Amanda Rumsey and Jessica Fayne, Joint Center for Earth Systems Technology (JCET)
-#
-#	The purpose of this code is to convert data file written in hdf5 format to text and raster (GeoTiff) formats
-#  	The code also allows sub-setting the data file by a bounding box specified by the user
-#
-# 	This code is provided on an experimental basis as a general guideline to convert HDF5 files to text and raster formats,
-# 	and may not be usable as is for operational applications. 
-# 	The code is tested for our internal use and only for this training activity
-# 	It is strongly recommended that users test and customize the code according to their needs before operational use. 
-#
-#===============================================================================================================================
+#Code produced through UMBC's Joint Center for Earth Systems Technology
+#If you have any questions or concerns regarding the following script, please contact Amanda Rumsey at arumsey@umbc.edu
+#The purpose of this code is to convert datasets within imerg hdf files to txt files and to clip the files by a bounding box specified by the user
 
 #start of the program
 print("starting the conversion from hdf to txt file:")
@@ -58,10 +47,19 @@ print("")
 
 #list of hdf files to be converted
 print("list of hdf files")
-hdflist=glob.glob(os.path.join('*.rt-h5'))
+hdflist=glob.glob(os.path.join('*.hdf5'))
+hdflist2=glob.glob(os.path.join('*-h5'))
+hdflist3=glob.glob(os.path.join('*.h5'))
+
+hdflist4=glob.glob(os.path.join('*-H5'))
+hdflist5=glob.glob(os.path.join('*.H5'))
+hdflist6=glob.glob(os.path.join('*.HDF5'))
+
+hdflist=hdflist+hdflist2+hdflist3+hdflist4+hdflist5+hdflist6
 print(hdflist)
 print("")
 
+'''
 #available datasets in hdf files
 print("available datasets in HDF5 files: ")
 singlehdflist=hdflist[0]
@@ -69,6 +67,7 @@ insidehdffile=h5py.File(singlehdflist,"r+")
 insidehdffile.visit(printname)
 insidehdffile.close()
 print("")
+'''
 
 #user input for clipping capability
 print("enter the bounding box in decimal degrees")
