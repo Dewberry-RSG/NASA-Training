@@ -58,7 +58,7 @@ print("")
 
 #list of hdf files to be converted
 print("list of hdf files")
-hdflist=glob.glob(os.path.join('*.HDF5'))
+hdflist=glob.glob(os.path.join('*.rt-h5'))
 print(hdflist)
 print("")
 
@@ -101,7 +101,7 @@ for hdffile in hdflist:
 	print("creating arrays for latitude, longitude and surface precipitation")
 	lat=currenthdffile['Grid/lat']
 	long=currenthdffile['Grid/lon']
-	precip=currenthdffile['Grid/precipitation']
+	precip=currenthdffile['Grid/precipitationCal']
 	latitude=np.array(lat)
 	longitude=np.array(long)
 	precipitation=np.array(precip)
