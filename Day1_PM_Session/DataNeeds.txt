@@ -1,0 +1,3 @@
+DataNeeds: From FTP or Thumb drive
+
+1. SRTM California Folders
